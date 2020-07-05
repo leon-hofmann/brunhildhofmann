@@ -5,5 +5,4 @@ module.exports = {
   url: "https:/brunhildhofmann.de",
   prefix: "/",
   author: "Brunhild Hofmann",
-  social: "",
 }
