@@ -669,6 +669,10 @@ body {
   box-shadow: none !important;
 }
 
+.quote-author {
+  text-align: center;
+}
+
 /* Author Archive
 /* ---------------------------------------------------------- */
 

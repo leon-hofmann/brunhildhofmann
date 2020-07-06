@@ -45,7 +45,7 @@ const Layout = props => {
                 <Link to={`/elements`}>Links</Link>
               </li>
               <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Kontakt</Link>
+                <Link to={`/home`}>Kontakt</Link>
               </li>
             </ul>
           </div>
@@ -57,15 +57,7 @@ const Layout = props => {
         </div>
       </main>
       <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built with{" "}
-        <a
-          href="https://gatsbyjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gatsby
-        </a>
+        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link>
       </footer>
     </div>
   )
