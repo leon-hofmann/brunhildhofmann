@@ -8,23 +8,32 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
-const BlogIndex = ({ data }, location) => {
+const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-  let postCounter = 0
+  const pieceQuote = data.site.siteMetadata.pieceQuote
+  const authorQuote = data.site.siteMetadata.authorQuote
+  const description = data.site.siteMetadata.description
 
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        title="Home"
+        keywords={[
+          `brunhild hofmann`,
+          `psych-k`,
+          `per-k`,
+          `psych-k im täglichen leben`,
+        ]}
       />
       {/* <Bio /> */}
-      {data.site.siteMetadata.description && (
+      {description && (
         <header className="page-head">
-          <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
-          </h2>
+          <h2 className="page-head-title">{description}</h2>
+          <div className="quote-author">
+            <p>
+              <em>{pieceQuote}</em> von <em>{authorQuote}</em>
+            </p>
+          </div>
         </header>
       )}
     </Layout>
@@ -37,6 +46,8 @@ const indexQuery = graphql`
       siteMetadata {
         title
         description
+        authorQuote
+        pieceQuote
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

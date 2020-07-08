@@ -6,6 +6,8 @@ module.exports = {
     title: siteConfig.name,
     author: siteConfig.author,
     description: siteConfig.description,
+    pieceQuote: siteConfig.pieceQuote,
+    authorQuote: siteConfig.authorQuote,
     siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
   },
   plugins: [
