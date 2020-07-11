@@ -17,18 +17,46 @@ const AboutPage = ({ data }, location) => {
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+          <h6 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
             Jedes meiner Bücher ist aus einem Wink des Herzens heraus
             entstanden. Ich habe sie für mich geschrieben. Und ich freue mich,
             wenn sie Anderen gefallen und ihnen dienen.
-          </h2>
-          <figure className="kg-card kg-image-card kg-width-full">
+          </h6>
+          <figure className="kg-card kg-image-card kg-width-small">
             <Img
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>Large imagery is at the heart of this theme</figcaption>
           </figure>
+          <p>
+            <strong>Orgasmus - die weibliche Kraft</strong>
+          </p>
+          <p>
+            Orgasmus statt Frustration - weiblich - kreativ - kraftvoll
+            <p>
+              Weiblichkeit, Kreativität und Lebenskraft - welche Frau möchte
+              diese natürlichen Gaben nicht entdecken und entfalten? Das
+              Geheimnis: Diese Qualitäten entspringen dem Wohlgefühl, das ihr
+              Genital, die Brüste, die Vagina und die entsprechenden inneren
+              Anteile ihr bereiten - nämlich dem Glück, sich in ihrem Körper
+              rundum wohlzufühlen, ihn als Geschenk zu betrachten und ihn als
+              solches zu genießen. Der Orgasmus - ob alleine oder zu zweit
+              erlebt - ist dabei ein Potenzial, das jeder Frau zur Verfügung
+              steht und ihr Leben erblühen lässt.
+            </p>
+            <p>
+              Das Buch beleuchtet die hormonellen, physischen und anatomischen
+              Facetten dieser Potenz und gibt Einblick in subjektives Erleben.
+              Konkrete Anleitungen ermutigen dazu, sich dem eigenen Körper
+              liebevoll zu nähern. Die Wahl einer aufrichtig erotischen und
+              dabei zärtlichen Sprache macht das Lesen zum Vergnügen.
+            </p>
+            <p>
+              Es gibt keine richtige oder falsche orgiastische Erfahrung.
+              Lebenswert ist, was das Leben stärkt.
+            </p>
+          </p>
           <h3 id="dynamic-styles">Dynamic styles</h3>
           <p>
             London comes with photo-centric main layout best suited to
@@ -64,7 +92,7 @@ const indexQuery = graphql`
       }
     }
     benchAccounting: file(
-      relativePath: { eq: "fabio-comparelli-696506-unsplash.jpg" }
+      relativePath: { eq: "orgasmus_die_weiblich_kraft.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
