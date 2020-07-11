@@ -39,11 +39,11 @@ const AboutPage = ({ data }, location) => {
               diese natürlichen Gaben nicht entdecken und entfalten? Das
               Geheimnis: Diese Qualitäten entspringen dem Wohlgefühl, das ihr
               Genital, die Brüste, die Vagina und die entsprechenden inneren
-              Anteile ihr bereiten - nämlich dem Glück, sich in ihrem Körper
-              rundum wohlzufühlen, ihn als Geschenk zu betrachten und ihn als
-              solches zu genießen. Der Orgasmus - ob alleine oder zu zweit
-              erlebt - ist dabei ein Potenzial, das jeder Frau zur Verfügung
-              steht und ihr Leben erblühen lässt.
+              Anteile bereiten - nämlich dem Glück, sich in ihrem Körper rundum
+              wohlzufühlen, ihn als Geschenk zu betrachten und ihn als solches
+              zu genießen. Der Orgasmus - ob alleine oder zu zweit erlebt - ist
+              dabei ein Potenzial, das jeder Frau zur Verfügung steht und ihr
+              Leben erblühen lässt.
             </p>
             <p>
               Das Buch beleuchtet die hormonellen, physischen und anatomischen
