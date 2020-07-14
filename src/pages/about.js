@@ -27,7 +27,7 @@ const AboutPage = ({ data }, location) => {
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Large imagery is at the heart of this theme</figcaption>
+            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
           </figure>
           <p>
             <strong>Orgasmus - die weibliche Kraft</strong>
