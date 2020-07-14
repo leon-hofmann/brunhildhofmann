@@ -17,12 +17,12 @@ const AboutPage = ({ data }, location) => {
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h6 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+          <h6 class="slogan" id="slogan-literature">
             Jedes meiner Bücher ist aus einem Wink des Herzens heraus
             entstanden. Ich habe sie für mich geschrieben. Und ich freue mich,
             wenn sie Anderen gefallen und ihnen dienen.
           </h6>
-          <figure className="kg-card kg-image-card kg-width-small">
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"

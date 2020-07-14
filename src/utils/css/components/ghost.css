@@ -36,6 +36,16 @@
   transform: translateX(calc(15vw - 50%));
 }
 
+.floated-right {
+  float: right;
+  padding: 0rem;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  margin-left: calc(10% - 1vw);
+  margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
+}
+
 .kg-width-wide {
   position: relative;
   width: 75vw;
