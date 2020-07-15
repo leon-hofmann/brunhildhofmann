@@ -62,7 +62,7 @@ const AboutPage = ({ data }, location) => {
               fluid={data.psychkImTaeglichenLeben.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
+            <figcaption>PSYCH-K im täglichen Leben</figcaption>
           </figure>
           <p>
             <strong>
@@ -95,7 +95,7 @@ const AboutPage = ({ data }, location) => {
               fluid={data.psychkErleben.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
+            <figcaption>PSYCH-K erleben</figcaption>
           </figure>
           <p>
             <strong>20 lebensbejahende Inspirationen aus der Praxis. </strong>
@@ -143,7 +143,7 @@ const AboutPage = ({ data }, location) => {
               fluid={data.findeDeinInneresGleichgewicht.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
+            <figcaption>Finde dein inneres Gleichgewicht</figcaption>
           </figure>
           <p>
             <strong>Die beglückende Verbindung von Gehirn und Herz. </strong>
