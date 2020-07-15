@@ -15,7 +15,7 @@ const AboutPage = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
       <article className="post-content page-template no-image">
-        <div className="post-content-body">
+        <div className="post-content-body spacer">
           <h6 class="slogan" id="slogan-literature">
             Jedes meiner Bücher ist aus einem Wink des Herzens heraus
             entstanden. Ich habe sie für mich geschrieben. Und ich freue mich,
@@ -23,35 +23,25 @@ const AboutPage = ({ data }, location) => {
           </h6>
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.orgasmusDieWeiblicheKraft.childImageSharp.fluid}
+              fluid={data.starkOderSchwach.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
+            <figcaption>Stark oder Schwach?</figcaption>
           </figure>
           <p>
-            <strong>Orgasmus - die weibliche Kraft</strong>
-          </p>
-          <p>Orgasmus statt Frustration - weiblich - kreativ - kraftvoll</p>
-          <p>
-            Weiblichkeit, Kreativität und Lebenskraft - welche Frau möchte diese
-            natürlichen Gaben nicht entdecken und entfalten? Das Geheimnis:
-            Diese Qualitäten entspringen dem Wohlgefühl, das ihr Genital, die
-            Brüste, die Vagina und die entsprechenden inneren Anteile bereiten -
-            nämlich dem Glück, sich in ihrem Körper rundum wohlzufühlen, ihn als
-            Geschenk zu betrachten und ihn als solches zu genießen. Der Orgasmus
-            - ob alleine oder zu zweit erlebt - ist dabei ein Potenzial, das
-            jeder Frau zur Verfügung steht und ihr Leben erblühen lässt.
+            <strong>Welche Entscheidung ist die richtige?</strong>
           </p>
           <p>
-            Das Buch beleuchtet die hormonellen, physischen und anatomischen
-            Facetten dieser Potenz und gibt Einblick in subjektives Erleben.
-            Konkrete Anleitungen ermutigen dazu, sich dem eigenen Körper
-            liebevoll zu nähern. Die Wahl einer aufrichtig erotischen und dabei
-            zärtlichen Sprache macht das Lesen zum Vergnügen.
-          </p>
-          <p>
-            Es gibt keine richtige oder falsche orgiastische Erfahrung.
-            Lebenswert ist, was das Leben stärkt.
+            Durch den Selbst-Muskeltest rufen wir unser tiefes Körperwissen ab
+            und können es zur Grundlage unserer Entscheidungen machen immer wenn
+            wir es brauchen sowie in jeder Situation. Elf Selbst-Muskeltests
+            geben den Lesern die Möglichkeit, verschiedene Techniken
+            auszuprobieren und den Test für sich zu finden, dem sie jeweils
+            vertrauen. Basierend auf dem Selbst-Muskeltest finden Sie zusätzlich
+            eine Methode der Stressauflösung, durch die Sie wirkungsvoll
+            Blockaden im Gehirn transformieren und somit Verbindung statt
+            Konflikt erleben. Immer stärker sich selbst vertrauen das ist der
+            Weg!
           </p>
         </div>
         <div className="post-content-body spacer">
@@ -81,52 +71,37 @@ const AboutPage = ({ data }, location) => {
           <p>
             PSYCH-K ist eine Selbsthilfemethode, die beschleunigtes Wachstum mit
             Leichtigkeit und Erfolg verbindet. Für BeraterInnen, PsychologInnen,
-            Coaches und Menschen aus heilenden Berufen ist Psych-K eine optimale
+            Coaches und Menschen aus heilenden Berufen ist PSYCH-K eine optimale
             Ergänzung.
           </p>
         </div>
-        <div className="post-content-body spacer">
+        <div className="post-content-body">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.psychkErleben.childImageSharp.fluid}
+              fluid={data.orgasmusDieWeiblicheKraft.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>PSYCH-K erleben</figcaption>
+            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
           </figure>
           <p>
-            <strong>20 lebensbejahende Inspirationen aus der Praxis. </strong>
+            <strong>Orgasmus - die weibliche Kraft</strong>
           </p>
           <p>
-            Lebensbejahende Beispiele zu folgenden Themen: - Flugangst - Angst
-            vor Publikum zu sprechen - einen neuen Arbeitsplatz finden -
-            Abschied vom Vater - mit dem Rauchen aufhören - das Ende einer
-            Beziehung und viele Inspirationen mehr. Deutlich wird: Bei PSYCH-K
-            geht es immer um die Frage: Was willst du stattdessen? - also um die
-            Kraft der stärkenden Gefühle und Überzeugungen.
-          </p>
-        </div>
-        <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.starkOderSchwach.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>Stark oder Schwach?</figcaption>
-          </figure>
-          <p>
-            <strong>Welche Entscheidung ist die richtige?</strong>
+            Was braucht es, um sich als Frau im eigenen Körper rundum
+            wohlzufühlen, ihn als Geschenk zu betrachten und dieses Geschenk
+            auch zu genießen? Wie stärken wir unsere Weiblichkeit, Kreativität
+            und Lebensenergie?
           </p>
           <p>
-            Durch den Selbst-Muskeltest rufen wir unser tiefes Körperwissen ab
-            und können es zur Grundlage unserer Entscheidungen machen immer wenn
-            wir es brauchen sowie in jeder Situation. Elf Selbst-Muskeltests
-            geben den Lesern die Möglichkeit, verschiedene Techniken
-            auszuprobieren und den Test für sich zu finden, dem sie jeweils
-            vertrauen. Basierend auf dem Selbst-Muskeltest finden Sie zusätzlich
-            eine Methode der Stressauflösung, durch die Sie wirkungsvoll
-            Blockaden im Gehirn transformieren und somit Verbindung statt
-            Konflikt erleben. Immer stärker sich selbst vertrauen das ist der
-            Weg!
+            Der Orgasmus - ob alleine oder zu zweit erlebt - ist ein Potenzial,
+            das jeder Frau zur Verfügung steht und ihr Leben erblühen lässt. Die
+            Autorin beleuchtet die hormonellen, physischen und anatomischen
+            Facetten dieser Potenz und gibt Einblick in subjektives Erleben.
+            Konkrete Anleitungen ermutigen dazu, sich dem eigenen Körper
+            liebevoll zu nähern. Verschiedene anatomische Aspekte von Vagina und
+            Klitoris werden in ihrer Bedeutung für den weiblichen Orgasmus
+            beleuchtet. Es gibt keine richtige oder falsche orgiastische
+            Erfahrung. Lebenswert ist, was das Leben stärkt.
           </p>
         </div>
         <div className="post-content-body spacer">
@@ -159,6 +134,26 @@ const AboutPage = ({ data }, location) => {
             Sie geben uns die Kraft, die Schönheit unseres Weges zu entdecken,
             und verschaffen uns den nötigen Aufwind, damit wir uns aus
             Leidensphasen erneuert und bereichert wieder erheben können.
+          </p>
+        </div>
+        <div className="post-content-body spacer">
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.psychkErleben.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>PSYCH-K erleben</figcaption>
+          </figure>
+          <p>
+            <strong>20 lebensbejahende Inspirationen aus der Praxis</strong>
+          </p>
+          <p>
+            Lebensbejahende Beispiele zu folgenden Themen: - Flugangst - Angst
+            vor Publikum zu sprechen - einen neuen Arbeitsplatz finden -
+            Abschied vom Vater - mit dem Rauchen aufhören - das Ende einer
+            Beziehung und viele Inspirationen mehr. Deutlich wird: Bei PSYCH-K
+            geht es immer um die Frage: Was willst du stattdessen? - also um die
+            Kraft der stärkenden Gefühle und Überzeugungen.
           </p>
         </div>
       </article>
