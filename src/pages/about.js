@@ -54,9 +54,7 @@ const AboutPage = ({ data }, location) => {
             Lebenswert ist, was das Leben stärkt.
           </p>
         </div>
-      </article>
-      <article className="post-content page-template no-image">
-        <div className="post-content-body">
+        <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.psychkImTaeglichenLeben.childImageSharp.fluid}
@@ -87,9 +85,7 @@ const AboutPage = ({ data }, location) => {
             Ergänzung.
           </p>
         </div>
-      </article>
-      <article className="post-content page-template no-image">
-        <div className="post-content-body">
+        <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.psychkErleben.childImageSharp.fluid}
@@ -109,9 +105,7 @@ const AboutPage = ({ data }, location) => {
             Kraft der stärkenden Gefühle und Überzeugungen.
           </p>
         </div>
-      </article>
-      <article className="post-content page-template no-image">
-        <div className="post-content-body">
+        <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.starkOderSchwach.childImageSharp.fluid}
@@ -135,9 +129,7 @@ const AboutPage = ({ data }, location) => {
             Weg!
           </p>
         </div>
-      </article>
-      <article className="post-content page-template no-image">
-        <div className="post-content-body">
+        <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.findeDeinInneresGleichgewicht.childImageSharp.fluid}

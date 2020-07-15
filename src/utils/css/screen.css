@@ -541,6 +541,10 @@ body {
   transform: translateX(calc(50vw - 50%));
 }
 
+.spacer {
+  margin-top: 4vw;
+}
+
 .post-content-body {
   font-size: 1.9rem;
   line-height: 1.65em;
