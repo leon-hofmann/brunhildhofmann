@@ -1,89 +1,67 @@
-Tyra - Feminine Blog Powered by Gatsby
-=====
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-green.svg)](https://shields.io/) [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://gatsby-london.netlify.com">
+    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" />
+  </a>
+</p>
 
-Tyra is a Gatsby starter that focuses on legibility and a clean, feminine design with 2010 influences. Technically, the goals for Tyra are having a "plug and play" blog, with great SEO, tooling, and integrations all included.
+<h1 align="center">
+  London by <a href="https://jamstack.studio">Jamstack Studio</a>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/madelyneriksen/gatsby-starter-tyra)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
 
-## Getting Started
-
-The first step with using Tyra is customizing your metadata in `gatsby-config.js`.
-
-```javascript
-siteMetadata: {
-  navbarLinks: [
-    {to: "/makeup", name: "Makeup"},
-    {to: "/lifestyle", name: "Lifestyle"},
-    {to: "/blog", name: "blog"},
-  ],
-  title: "", // The name of your blog
-  description: "", // SEO Description
-  siteUrl: "", // Base URL of your blog (https://example.com)
-  homepageHeader: "", // Header text for the homepage
-  homepageAbout: "", // Banner body for the homepage
-  mailChimpUrl: "", // Link you your mailchimp campaign (From the embedded form maker)
-  mailChimpToken: "", // The hidden field on mailchimp forms
-  pinterest: "", // Your pinterest profile
-  facebook: "", // Your facebook profile
-  twitter: "", // Your twitter profile
-}
-```
-
-This is used for configuring data across the site, improving SEO, and increasing engagement on social media.
-
-Next up, you can begin customizing the images and copy in `content/`. Finally, you can add your own blog posts! Posts are written in Markup, an easy way to create webpages.
-
-## Installation with `gatsby-cli`
-`gatsby new my-site https://github.com/madelyneriksen/gatsby-starter-tyra`
-
-## Installation with `git clone`
-`git clone git@github.com:madelyneriksen/gatsby-starter-tyra.git my-site`
-`cd my-site`
-`yarn install`
-
-## To develop
-`yarn develop`
-
-## To build
-`yarn build`
-
-
-## Screenshot
-
-![Screenshot of Tyra Homepage](./screenshot.jpg)
-
-## Adding your Content
-
-Tyra uses markdown for writing blog posts, and follows a simple template for adding new posts. To add a new blog post, create a file in `content/posts/` with the following:
-
-```markdown
----
-
-type: "post"
-title: "My Awesome Post Title"
-author: "My Name"
-category: "My Category"
-date: "2019-01-05"
-slug: "/my-awesome-post"
-postImage: "./img/myimage.jpg"
-metaDescription: "This is my first awesome and cool post!!!"
+</h1>
 
 ---
 
-You can write your post here using markdown! Link to images in the `img` folder using this syntax:
+A custom, image-centric theme for Gatsby. Made for publishers and portfolios with plenty of graphics to show off to the world. Completely free and fully responsive, released under the MIT license.
 
-![Alt Text](./img/my-image.jpeg)
-```
+**Based on [London](https://github.com/TryGhost/London) for Ghost**
 
-Images for posts are stored in `content/posts/img/`. Images in the frontmatter will be used as thumbnails for the articles, as well as in search results.
+**Demo: https://gatsby-london.netlify.com**
 
-## License
+---
 
-Tyra is licensed under the terms of the MIT License.
+<p align="center">
+  <a href="https://jamstack.studio">
+    <img alt="Jamstack Studio" src="https://raw.githubusercontent.com/ImedAdel/media/master/jamstack.studio_(Laptop%20with%20HiDPI%20screen).png" />
+  </a>
+</p>
 
-## Thanks and Mentions
+---
 
-* The [GatsbyJS](https://www.gatsbyjs.org/) Team for creating an amazing platform.
-* [Netlify](https://www.netlify.com/) for making static site hosting even easier.
-* [Unsplash](https://unsplash.com/) and the Free Photography Community.
+_I haven't really spent any time adding the JS animations or removing any unused CSS (automatically done by PurgeCSS). You will also need HTML in your Markdown file in order to add CSS classes to your images_
+
+---
+
+_First time with Gatsby? Take a look on the [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+
+## 🚀 Quick start
+
+1.  **Create a Gatsby site.**
+
+    Use `npx` and the Gatsby CLI to create a new project
+
+    ```sh
+    # create a new Gatsby site using the blog starter
+    npx gatsby new my-awesome-portfolio https://github.com/ImedAdel/gatsby-london
+    ```
+
+1.  **Start developing.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```sh
+    cd my-awesome-portfolio/
+    gatsby develop
+    ```
+
+1.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+
+    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+<!-- AUTO-GENERATED-CONTENT:END -->

@@ -1,38 +1,32 @@
-import React from 'react';
-import Layout from '../common/layouts';
-import Img from 'gatsby-image';
-import { graphql, Link } from 'gatsby';
-import Seo from '../common/seo';
+import React from "react"
+import { graphql } from "gatsby"
 
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-export default ({props, data}) => (
-  <Layout>
-    <Seo
-      title={`About ${data.site.siteMetadata.title}`}
-      description={data.site.siteMetadata.description} />
- 
-    <div className="mw9 center flex flex-wrap pv5-l w-100">
-      <div className="mw7 w-100 pa2">
+class NotFoundPage extends React.Component {
+  render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
 
-        <h1 className="display fw1 db lh-copy"> 404 // Page Not Found</h1>
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO title="404: Not Found" />
+        <h1>Not Found</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </Layout>
+    )
+  }
+}
 
-        <p className="mw7 w-100 lh-copy serif pa2 flex flex-column justify-center f4" >        We couldn&#39;t find what you were looking for.</p>
-        <Link to="/" className="dib bg-dark-gray b near-white hover-bg-mid-gray pv3 ph4 ttu tracked sans-serif no-underline mv2">Go to homepage</Link>
-      </div>
+export default NotFoundPage
 
-    </div>
-  </Layout>
-
-
-)
-
-
-export const dataQuery = graphql`
+export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title,
-        description
+        title
       }
     }
-  }`
+  }
+`
