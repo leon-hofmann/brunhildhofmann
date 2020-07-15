@@ -20,17 +20,15 @@ const HomePage = ({ data }) => {
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="heading-level-2">
-            Ach, dass wir doch dem reinen stillen Wink des Herzens nachzugehen
-            so sehr verlernen! Ganz leise spricht ein Gott in unsrer Brust, ganz
-            leise, ganz vernehmlich, zeigt uns an, was zu ergreifen ist und was
-            zu fliehn.
-          </h2>
-          <div className="quote-author">
-            <p>
-              <em>Torquato Tasso</em> von <em>Johann Wolfgang von Goethe</em>
-            </p>
-          </div>
+          <p>Brunhild Hofmann</p>
+          <p>Dieburger Straße 98 A</p>
+          <p>D-64287 Darmstadt</p>
+          <p>Tel.: 06151-45475</p>
+          <p>
+            <a href="mailto:brunhild.hofmann@energyfocus.de">
+              brunhild.hofmann@energyfocus.de
+            </a>
+          </p>
         </div>
       </article>
     </Layout>
