@@ -20,7 +20,7 @@ const HomePage = ({ data }) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <p>Brunhild Hofmann</p>
-          <p>Dieburger Straße 98 A</p>
+          <p>Darmstraße 14</p>
           <p>D-64287 Darmstadt</p>
           <p>Tel.: 06151-45475</p>
           <p>
