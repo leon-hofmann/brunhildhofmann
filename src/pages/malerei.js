@@ -26,53 +26,35 @@ const AboutPage = ({ data }) => {
               fluid={data.umarmung.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Stark oder Schwach?</figcaption>
+            <figcaption>Zärtlich umarmen</figcaption>
           </figure>
           <p>
-            <strong>Welche Entscheidung ist die richtige?</strong>
+            <strong>Zärtlich umarmen</strong>
           </p>
           <p>
-            Durch den Selbst-Muskeltest rufen wir unser tiefes Körperwissen ab
-            und können es zur Grundlage unserer Entscheidungen machen immer wenn
-            wir es brauchen sowie in jeder Situation. Elf Selbst-Muskeltests
-            geben den Lesern die Möglichkeit, verschiedene Techniken
-            auszuprobieren und den Test für sich zu finden, dem sie jeweils
-            vertrauen. Basierend auf dem Selbst-Muskeltest finden Sie zusätzlich
-            eine Methode der Stressauflösung, durch die Sie wirkungsvoll
-            Blockaden im Gehirn transformieren und somit Verbindung statt
-            Konflikt erleben. Immer stärker sich selbst vertrauen das ist der
-            Weg!
+            „Zärtlich umarmen“ lässt auf der zweidimensionalen Leinwand Energien
+            entstehen, die Dunkelheit transformieren. Die Zärtlichkeit umarmt
+            die Dunkelheit und lässt das Ganze leuchten. Acryl und Gouache auf
+            Leinwand
           </p>
         </div>
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.gelbePinkeKleckse.childImageSharp.fluid}
+              fluid={data.umarmung.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>PSYCH-K im täglichen Leben</figcaption>
+            <figcaption>
+              Gelbe und pinke Kleckse durch Grün verbunden
+            </figcaption>
           </figure>
           <p>
-            <strong>
-              Für eine entspannte Kommunikation zwischen Bewusstsein und
-              Unterbewusstsein
-            </strong>
+            <strong>Gelbe und pinke Kleckse durch Grün verbunden</strong>
           </p>
           <p>
-            PSYCH-K, eine Methode für jedermann, lässt uns direkt mit Körper und
-            Seele Zwiesprache halten: Auf einfache Weise entdecken wir
-            limitierende Überzeugungen und verwandeln sie in uns stärkende
-            Glaubenssätze. Das Ergebnis ist die kraftvolle Ausrichtung unseres
-            Unterbewusstseins verbunden mit dem Aspekt unseres Höheren Selbst
-            auf unsere bewussten Ziele. Das Verschmelzen von Grundlagen der
-            Kinesiologie und des Neuro-Linguistischen-Programmierens (NLP) mit
-            Energie- und Atemarbeit tragen zur hohen Effizienz der Methode bei.
-          </p>
-          <p>
-            PSYCH-K ist eine Selbsthilfemethode, die beschleunigtes Wachstum mit
-            Leichtigkeit und Erfolg verbindet. Für BeraterInnen, PsychologInnen,
-            Coaches und Menschen aus heilenden Berufen ist PSYCH-K eine optimale
-            Ergänzung.
+            Spontaner Auftrag von Acrylfarbe direkt aus dem Gehen und aus der
+            Tube gedrückt. Punkte werden verbunden, wie alles verbunden ist und
+            das Ganze fließt. Acryl auf dünnem Papier.
           </p>
         </div>
         <div className="post-content-body">
@@ -81,27 +63,16 @@ const AboutPage = ({ data }) => {
               fluid={data.impulse.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Orgasmus - die weibliche Kraft</figcaption>
+            <figcaption>Impulse aus heiterem Himmel</figcaption>
           </figure>
           <p>
-            <strong>Orgasmus - die weibliche Kraft</strong>
+            <strong>Impulse aus heiterem Himmel</strong>
           </p>
           <p>
-            Was braucht es, um sich als Frau im eigenen Körper rundum
-            wohlzufühlen, ihn als Geschenk zu betrachten und dieses Geschenk
-            auch zu genießen? Wie stärken wir unsere Weiblichkeit, Kreativität
-            und Lebensenergie?
-          </p>
-          <p>
-            Der Orgasmus - ob alleine oder zu zweit erlebt - ist ein Potenzial,
-            das jeder Frau zur Verfügung steht und ihr Leben erblühen lässt. Die
-            Autorin beleuchtet die hormonellen, physischen und anatomischen
-            Facetten dieser Potenz und gibt Einblick in subjektives Erleben.
-            Konkrete Anleitungen ermutigen dazu, sich dem eigenen Körper
-            liebevoll zu nähern. Verschiedene anatomische Aspekte von Vagina und
-            Klitoris werden in ihrer Bedeutung für den weiblichen Orgasmus
-            beleuchtet. Es gibt keine richtige oder falsche orgiastische
-            Erfahrung. Lebenswert ist, was das Leben stärkt.
+            Spontane Bewegungen der Hände und Finger erschaffen spielerisch eine
+            Komposition in Rot, Grün und Gelb mit einem Schimmer von Blau. Dies
+            ist Teil des Ergebnisses der Selbsterfahrung einer Gruppe mit Farbe
+            und Malen.
           </p>
         </div>
         <div className="post-content-body spacer">
@@ -110,19 +81,12 @@ const AboutPage = ({ data }) => {
               fluid={data.erbluehen.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>PSYCH-K erleben</figcaption>
+            <figcaption>Erblühen</figcaption>
           </figure>
           <p>
-            <strong>20 lebensbejahende Inspirationen aus der Praxis</strong>
+            <strong>Erblühen</strong>
           </p>
-          <p>
-            Lebensbejahende Beispiele zu folgenden Themen: - Flugangst - Angst
-            vor Publikum zu sprechen - einen neuen Arbeitsplatz finden -
-            Abschied vom Vater - mit dem Rauchen aufhören - das Ende einer
-            Beziehung und viele Inspirationen mehr. Deutlich wird: Bei PSYCH-K
-            geht es immer um die Frage: Was willst du stattdessen? - also um die
-            Kraft der stärkenden Gefühle und Überzeugungen.
-          </p>
+          <p></p>
         </div>
       </article>
     </Layout>
