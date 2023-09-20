@@ -47,7 +47,7 @@ const AboutPage = ({ data }) => {
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.gelbe - pinke - kleckse.childImageSharp.fluid}
+              fluid={data.gelbePinkeKleckse.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>PSYCH-K im täglichen Leben</figcaption>
@@ -136,18 +136,14 @@ const indexQuery = graphql`
         title
       }
     }
-    impulse: file(
-      relativePath: { eq: "impulse.jpg" }
-    ) {
+    impulse: file(relativePath: { eq: "impulse.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    gelbe-pinke-kleckse: file(
-      relativePath: { eq: "gelbe-pinke-kleckse.jpg" }
-    ) {
+    gelbePinkeKleckse: file(relativePath: { eq: "gelbe-pinke-kleckse.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
