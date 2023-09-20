@@ -23,7 +23,7 @@ const AboutPage = ({ data }) => {
           </h6>
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.starkOderSchwach.childImageSharp.fluid}
+              fluid={data.umarmung.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>Stark oder Schwach?</figcaption>
@@ -47,7 +47,7 @@ const AboutPage = ({ data }) => {
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.psychkImTaeglichenLeben.childImageSharp.fluid}
+              fluid={data.gelbe - pinke - kleckse.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>PSYCH-K im täglichen Leben</figcaption>
@@ -78,7 +78,7 @@ const AboutPage = ({ data }) => {
         <div className="post-content-body">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.orgasmusDieWeiblicheKraft.childImageSharp.fluid}
+              fluid={data.impulse.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>Orgasmus - die weibliche Kraft</figcaption>
@@ -107,39 +107,7 @@ const AboutPage = ({ data }) => {
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.findeDeinInneresGleichgewicht.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>Finde dein inneres Gleichgewicht</figcaption>
-          </figure>
-          <p>
-            <strong>Die beglückende Verbindung von Gehirn und Herz. </strong>
-          </p>
-          <p>
-            Wer sehnte sich nicht danach, sein volles Potenzial auf der Erde zu
-            entfalten und sich eins zu fühlen mit allem, was ist?! Das erfordert
-            die gleichwertige Aktivität unserer beiden Gehirnhälften sowie ein
-            harmonisches, synchrones Schwingen unseres Gehirns mit unserem
-            Herzen. Wir selbst haben die Kraft, getragen von unseren tiefen
-            Überzeugungen, durch Meditation und Erdung, das Zu-Hause-Sein in der
-            Natur, durch Segnen und Lieben, unser Körper-Geist-System in eine
-            kohärente Schwingung zu versetzen. Unser Gehirn dient unserem Herzen
-            als Tor zum Universum, wo wir alle die gleiche Sprache sprechen ...
-          </p>
-          <p>
-            Wenn wir uns lieben, statt recht haben zu wollen, heißen wir
-            Veränderungen als großartige Entwicklungschancen willkommen. Aus
-            Sicht der Wissenschaft wirken diese Energien bis in die zellulare
-            und molekulare Ebene hinein und verändern damit unser gesamtes Sein.
-            Sie geben uns die Kraft, die Schönheit unseres Weges zu entdecken,
-            und verschaffen uns den nötigen Aufwind, damit wir uns aus
-            Leidensphasen erneuert und bereichert wieder erheben können.
-          </p>
-        </div>
-        <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.psychkErleben.childImageSharp.fluid}
+              fluid={data.erbluehen.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>PSYCH-K erleben</figcaption>
@@ -168,8 +136,8 @@ const indexQuery = graphql`
         title
       }
     }
-    orgasmusDieWeiblicheKraft: file(
-      relativePath: { eq: "orgasmus-die-weibliche-kraft.jpg" }
+    impulse: file(
+      relativePath: { eq: "impulse.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
@@ -177,8 +145,8 @@ const indexQuery = graphql`
         }
       }
     }
-    psychkImTaeglichenLeben: file(
-      relativePath: { eq: "psych-k-im-täglichen-leben.jpg" }
+    gelbe-pinke-kleckse: file(
+      relativePath: { eq: "gelbe-pinke-kleckse.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
@@ -186,23 +154,14 @@ const indexQuery = graphql`
         }
       }
     }
-    psychkErleben: file(relativePath: { eq: "psych-k-erleben.jpg" }) {
+    erbluehen: file(relativePath: { eq: "erbluehen.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    starkOderSchwach: file(relativePath: { eq: "umarmung.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    findeDeinInneresGleichgewicht: file(
-      relativePath: { eq: "finde-dein-inneres-gleichgewicht.jpg" }
-    ) {
+    umarmung: file(relativePath: { eq: "umarmung.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
