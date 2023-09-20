@@ -41,7 +41,7 @@ const AboutPage = ({ data }) => {
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
-              fluid={data.umarmung.childImageSharp.fluid}
+              fluid={data.gelbePinkeKleckse.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>
