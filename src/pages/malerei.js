@@ -31,13 +31,41 @@ const AboutPage = ({ data }) => {
             />
             <figcaption>emotion 3, 2025</figcaption>
           </figure>
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.emotion4.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 4, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.emotion5.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 5, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.emotion7.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 7, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.emotion8.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 8, 2024</figcaption>
+          </figure>
           <p>
             <strong>emotion 1-8</strong>
           </p>
           <p>
             Diese Bilder sind aus dem aktuellen Gefühl entstanden und drücken es
-            aus durch Körper und Bewegung beim Malen aus. (Bilder 2 und 6
-            fehlen) Acrylamlerei, Spachteln und Schüttung
+            aus durch Körper und Bewegung beim Malen aus. Acrylamlerei,
+            Spachteln und Schüttung
           </p>
         </div>
       </article>
