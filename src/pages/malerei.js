@@ -16,11 +16,6 @@ const AboutPage = ({ data }) => {
       <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
       <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
-          <h6 class="slogan" id="slogan-literature">
-            Jedes meiner Bücher ist aus einem Wink des Herzens heraus
-            entstanden. Ich habe sie für mich geschrieben. Und ich freue mich,
-            wenn sie Anderen gefallen und ihnen dienen.
-          </h6>
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.umarmung.childImageSharp.fluid}
