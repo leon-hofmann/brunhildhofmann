@@ -33,6 +33,8 @@ const AboutPage = ({ data }) => {
             Leinwand
           </p>
         </div>
+      </article>
+      <article className="post-content page-template no-image">
         <div className="post-content-body">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
