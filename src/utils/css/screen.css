@@ -721,3 +721,52 @@ body {
 .page-template .post-content-body h3 {
   text-align: center;
 }
+
+/* artwork layout for image + title/text
+   Put this into src/utils/css/screen.css (or wherever you keep layout CSS) */
+
+/* Container for one artwork row: image on the right, text on the left */
+.artwork-row {
+  display: flex;
+  flex-wrap: wrap; /* allow stacking on small screens */
+  gap: 1rem;
+  align-items: center; /* vertically center text with image */
+}
+
+/* If you prefer the title aligned with the top of the image, use:
+   .artwork-row { align-items: flex-start; }
+*/
+
+/* Put the image (figure) on the right */
+.artwork-row .kg-image-card {
+  /* allow image to keep its natural width but limit it on small screens */
+  flex: 0 0 auto;
+  margin: 0; /* remove extra margins that could disturb vertical alignment */
+}
+
+/* Text block to the left of the image */
+.artwork-text {
+  flex: 1 1 320px; /* let text take the remaining space, min width so it wraps sensibly */
+  min-width: 200px;
+}
+
+/* Title styling - use this instead of the inline <p><strong>...</strong> */
+.artwork-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Small screens: stack image above text (image first) */
+@media (max-width: 700px) {
+  .artwork-row {
+    flex-direction: column-reverse; /* image above, text below; reverse so title sits under image */
+    align-items: stretch;
+  }
+  .artwork-row .kg-image-card {
+    width: 100%;
+  }
+  .artwork-text {
+    width: 100%;
+  }
+}
