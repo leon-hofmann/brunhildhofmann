@@ -76,7 +76,7 @@ const AboutPage = ({ data }) => {
               fluid={data.bietschhorn.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>bietschhorn-lötschental-wallis_2025</figcaption>
+            <figcaption>Bietschhorn Lötschental Wallis, 2025</figcaption>
           </figure>
           <p>
             <strong>Bietschhorn Lötschental Wallis, 2025</strong>
