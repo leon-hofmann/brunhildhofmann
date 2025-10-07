@@ -51,6 +51,8 @@ const AboutPage = ({ data }) => {
             und Malen.
           </p>
         </div>
+      </article>
+      <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
