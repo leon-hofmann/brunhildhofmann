@@ -33,25 +33,6 @@ const AboutPage = ({ data }) => {
             Leinwand
           </p>
         </div>
-        <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.gelbePinkeKleckse.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>
-              Gelbe und pinke Kleckse durch Grün verbunden
-            </figcaption>
-          </figure>
-          <p>
-            <strong>Gelbe und pinke Kleckse durch Grün verbunden</strong>
-          </p>
-          <p>
-            Spontaner Auftrag von Acrylfarbe direkt aus dem Gehen und aus der
-            Tube gedrückt. Punkte werden verbunden, wie alles verbunden ist und
-            das Ganze fließt. Acryl auf dünnem Papier.
-          </p>
-        </div>
         <div className="post-content-body">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
