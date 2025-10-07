@@ -83,13 +83,6 @@ const indexQuery = graphql`
         }
       }
     }
-    gelbePinkeKleckse: file(relativePath: { eq: "gelbe-pinke-kleckse.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     erbluehen: file(relativePath: { eq: "erbluehen.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
