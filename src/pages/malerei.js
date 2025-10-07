@@ -104,7 +104,7 @@ const AboutPage = ({ data }) => {
         </div>
       </article>
       <article className="post-content page-template no-image">
-        <div className="post-content-body artwork-row">
+        <div className="post-content-body">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
               fluid={data.impulse.childImageSharp.fluid}
@@ -112,16 +112,15 @@ const AboutPage = ({ data }) => {
             />
             <figcaption>Impulse aus heiterem Himmel</figcaption>
           </figure>
-
-          <div className="artwork-text">
-            <h2 className="artwork-title">Impulse aus heiterem Himmel</h2>
-            <p>
-              Spontane Bewegungen der Hände und Finger erschaffen spielerisch
-              eine Komposition in Rot, Grün und Gelb mit einem Schimmer von
-              Blau. Dies ist Teil des Ergebnisses der Selbsterfahrung einer
-              Gruppe mit Farbe und Malen.
-            </p>
-          </div>
+          <p>
+            <strong>Impulse aus heiterem Himmel</strong>
+          </p>
+          <p>
+            Spontane Bewegungen der Hände und Finger erschaffen spielerisch eine
+            Komposition in Rot, Grün und Gelb mit einem Schimmer von Blau. Dies
+            ist Teil des Ergebnisses der Selbsterfahrung einer Gruppe mit Farbe
+            und Malen.
+          </p>
         </div>
       </article>
       <article className="post-content page-template no-image">
