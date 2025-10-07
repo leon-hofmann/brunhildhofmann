@@ -69,7 +69,20 @@ const AboutPage = ({ data }) => {
           </p>
         </div>
       </article>
-
+      <article className="post-content page-template no-image">
+        <div className="post-content-body spacer">
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.bietschhorn.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>bietschhorn-lötschental-wallis_2025</figcaption>
+          </figure>
+          <p>
+            <strong>Bietschhorn Lötschental Wallis, 2025</strong>
+          </p>
+        </div>
+      </article>
       <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
