@@ -125,6 +125,9 @@ const AboutPage = ({ data }) => {
       </article>
       <article className="post-content page-template">
         <div className="post-content-body spacer">
+          <p>
+            <strong>Erblühen</strong>
+          </p>
           <figure className="kg-card kg-image-card">
             <Img
               fluid={data.erbluehen.childImageSharp.fluid}
@@ -132,10 +135,6 @@ const AboutPage = ({ data }) => {
             />
             <figcaption>Erblühen</figcaption>
           </figure>
-          <p>
-            <strong>Erblühen</strong>
-          </p>
-          <p></p>
         </div>
       </article>
     </Layout>
