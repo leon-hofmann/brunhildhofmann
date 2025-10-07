@@ -14,6 +14,34 @@ const AboutPage = ({ data }) => {
   return (
     <Layout title={siteTitle}>
       <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+
+      <article className="post-content page-template no-image">
+        <div className="post-content-body spacer">
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.emotion1.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 1, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small floated-right">
+            <Img
+              fluid={data.emotion3.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 3, 2025</figcaption>
+          </figure>
+          <p>
+            <strong>emotion 1-8</strong>
+          </p>
+          <p>
+            Diese Bilder sind aus dem aktuellen Gefühl entstanden und drücken es
+            aus durch Körper und Bewegung beim Malen aus. (Bilder 2 und 6
+            fehlen) Acrylamlerei, Spachteln und Schüttung
+          </p>
+        </div>
+      </article>
+
       <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
@@ -78,6 +106,57 @@ const indexQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    emotion1: file(relativePath: { eq: "emotion-1_2024.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    emotion3: file(relativePath: { eq: "emotion-3_2025.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    emotion4: file(relativePath: { eq: "emotion-4_2024.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    emotion5: file(relativePath: { eq: "emotion-5_2024.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    emotion7: file(relativePath: { eq: "emotion-7_2024.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    emotion8: file(relativePath: { eq: "emotion-8_2024.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bietschhorn: file(
+      relativePath: { eq: "bietschhorn-lötschental-wallis_2025.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
     impulse: file(relativePath: { eq: "impulse.jpg" }) {
