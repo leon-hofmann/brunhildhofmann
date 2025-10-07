@@ -17,48 +17,6 @@ const AboutPage = ({ data }) => {
 
       <article className="post-content page-template">
         <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.emotion1.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>emotion 1, 2024</figcaption>
-          </figure>
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.emotion3.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>emotion 3, 2025</figcaption>
-          </figure>
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.emotion4.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>emotion 4, 2024</figcaption>
-          </figure>
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.emotion5.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>emotion 5, 2024</figcaption>
-          </figure>
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.emotion7.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>emotion 7, 2024</figcaption>
-          </figure>
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.emotion8.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>emotion 8, 2024</figcaption>
-          </figure>
           <p>
             <strong>emotion 1-8</strong>
           </p>
@@ -67,31 +25,66 @@ const AboutPage = ({ data }) => {
             aus durch Körper und Bewegung beim Malen aus. Acrylamlerei,
             Spachteln und Schüttung
           </p>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.emotion1.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 1, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.emotion3.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 3, 2025</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.emotion4.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 4, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.emotion5.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 5, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.emotion7.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 7, 2024</figcaption>
+          </figure>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.emotion8.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>emotion 8, 2024</figcaption>
+          </figure>
         </div>
       </article>
       <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
+          <p>
+            <strong>Bietschhorn Lötschental Wallis, 2025</strong>
+          </p>
+          <figure className="kg-card kg-image-card kg-width-small">
             <Img
               fluid={data.bietschhorn.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>Bietschhorn Lötschental Wallis, 2025</figcaption>
           </figure>
-          <p>
-            <strong>Bietschhorn Lötschental Wallis, 2025</strong>
-          </p>
         </div>
       </article>
       <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.umarmung.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>Zärtlich umarmen</figcaption>
-          </figure>
           <p>
             <strong>Zärtlich umarmen</strong>
           </p>
@@ -101,17 +94,17 @@ const AboutPage = ({ data }) => {
             die Dunkelheit und lässt das Ganze leuchten. Acryl und Gouache auf
             Leinwand
           </p>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.umarmung.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>Zärtlich umarmen</figcaption>
+          </figure>
         </div>
       </article>
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.impulse.childImageSharp.fluid}
-              className="kg-image"
-            />
-            <figcaption>Impulse aus heiterem Himmel</figcaption>
-          </figure>
           <p>
             <strong>Impulse aus heiterem Himmel</strong>
           </p>
@@ -121,11 +114,18 @@ const AboutPage = ({ data }) => {
             ist Teil des Ergebnisses der Selbsterfahrung einer Gruppe mit Farbe
             und Malen.
           </p>
+          <figure className="kg-card kg-image-card kg-width-small">
+            <Img
+              fluid={data.impulse.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>Impulse aus heiterem Himmel</figcaption>
+          </figure>
         </div>
       </article>
       <article className="post-content page-template no-image">
         <div className="post-content-body spacer">
-          <figure className="kg-card kg-image-card kg-width-small floated-right">
+          <figure className="kg-card kg-image-card kg-width-small">
             <Img
               fluid={data.erbluehen.childImageSharp.fluid}
               className="kg-image"
