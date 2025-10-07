@@ -15,7 +15,7 @@ const AboutPage = ({ data }) => {
     <Layout title={siteTitle}>
       <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
 
-      <article className="post-content page-template no-image">
+      <article className="post-content page-template">
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
             <Img
