@@ -1,6 +1,6 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,8 +8,10 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-const AboutPage = ({ data }, location) => {
+const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
+
+  console.log('About page data:', data)
 
   return (
     <Layout title={siteTitle}>
@@ -22,10 +24,13 @@ const AboutPage = ({ data }, location) => {
             wenn sie Anderen gefallen und ihnen dienen.
           </h6>
           <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.starkOderSchwach.childImageSharp.fluid}
-              className="kg-image"
-            />
+            {data.starkOderSchwach?.childImageSharp?.gatsbyImageData && (
+              <GatsbyImage
+                image={data.starkOderSchwach.childImageSharp.gatsbyImageData}
+                className="kg-image"
+                alt="Stark oder Schwach?"
+              />
+            )}
             <figcaption>Stark oder Schwach?</figcaption>
           </figure>
           <p>
@@ -46,10 +51,13 @@ const AboutPage = ({ data }, location) => {
         </div>
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.psychkImTaeglichenLeben.childImageSharp.fluid}
-              className="kg-image"
-            />
+            {data.psychkImTaeglichenLeben?.childImageSharp?.gatsbyImageData && (
+              <GatsbyImage
+                image={data.psychkImTaeglichenLeben.childImageSharp.gatsbyImageData}
+                className="kg-image"
+                alt="PSYCH-K im täglichen Leben"
+              />
+            )}
             <figcaption>PSYCH-K im täglichen Leben</figcaption>
           </figure>
           <p>
@@ -77,10 +85,13 @@ const AboutPage = ({ data }, location) => {
         </div>
         <div className="post-content-body">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.orgasmusDieWeiblicheKraft.childImageSharp.fluid}
-              className="kg-image"
-            />
+            {data.orgasmusDieWeiblicheKraft?.childImageSharp?.gatsbyImageData && (
+              <GatsbyImage
+                image={data.orgasmusDieWeiblicheKraft.childImageSharp.gatsbyImageData}
+                className="kg-image"
+                alt="Orgasmus - die weibliche Kraft"
+              />
+            )}
             <figcaption>Orgasmus - die weibliche Kraft</figcaption>
           </figure>
           <p>
@@ -106,9 +117,10 @@ const AboutPage = ({ data }, location) => {
         </div>
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.findeDeinInneresGleichgewicht.childImageSharp.fluid}
+            <GatsbyImage
+              image={data.findeDeinInneresGleichgewicht.childImageSharp.gatsbyImageData}
               className="kg-image"
+              alt="Finde dein inneres Gleichgewicht"
             />
             <figcaption>Finde dein inneres Gleichgewicht</figcaption>
           </figure>
@@ -138,9 +150,10 @@ const AboutPage = ({ data }, location) => {
         </div>
         <div className="post-content-body spacer">
           <figure className="kg-card kg-image-card kg-width-small floated-right">
-            <Img
-              fluid={data.psychkErleben.childImageSharp.fluid}
+            <GatsbyImage
+              image={data.psychkErleben.childImageSharp.gatsbyImageData}
               className="kg-image"
+              alt="PSYCH-K erleben"
             />
             <figcaption>PSYCH-K erleben</figcaption>
           </figure>
@@ -161,62 +174,47 @@ const AboutPage = ({ data }, location) => {
   )
 }
 
-const indexQuery = graphql`
+export default AboutPage
+
+export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
         title
       }
     }
-    orgasmusDieWeiblicheKraft: file(
-      relativePath: { eq: "orgasmus-die-weibliche-kraft.jpg" }
+    starkOderSchwach: file(
+      relativePath: { eq: "stark-oder-schwach.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 1360)
       }
     }
     psychkImTaeglichenLeben: file(
       relativePath: { eq: "psych-k-im-täglichen-leben.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 1360)
       }
     }
-    psychkErleben: file(relativePath: { eq: "psych-k-erleben.jpg" }) {
+    orgasmusDieWeiblicheKraft: file(
+      relativePath: { eq: "orgasmus-die-weibliche-kraft.jpg" }
+    ) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    starkOderSchwach: file(relativePath: { eq: "stark-oder-schwach.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 1360)
       }
     }
     findeDeinInneresGleichgewicht: file(
       relativePath: { eq: "finde-dein-inneres-gleichgewicht.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 1360)
+      }
+    }
+    psychkErleben: file(relativePath: { eq: "psych-k-erleben.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(width: 1360)
       }
     }
   }
 `
-
-export default props => (
-  <StaticQuery
-    query={indexQuery}
-    render={data => (
-      <AboutPage location={props.location} data={data} {...props} />
-    )}
-  />
-)
