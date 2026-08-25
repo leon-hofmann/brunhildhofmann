@@ -46,6 +46,10 @@
     "prettier": "^3.9.6",
     "pretty-quick": "^4.2.2"
   },
+  "overrides": {
+    "immutable": "^5.1.9",
+    "brace-expansion": "^5.0.9"
+  },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby",
